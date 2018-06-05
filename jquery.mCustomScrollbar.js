@@ -1484,7 +1484,7 @@ and dependencies (minified).
 						contentPos=Math.abs($("#mCSB_"+d.idx+"_container")[0].offsetLeft),
 						draggerPos=mCSB_dragger[1][0].offsetLeft,
 						limit=mCSB_dragger[1].parent().width()-mCSB_dragger[1].width(),
-						dlt=o.mouseWheel.axis==="y" ? (deltaY || delta) : deltaX;
+						dlt=o.mouseWheel.axis==="y" ? deltaY : deltaX;
 				}else{
 					var dir="y",
 						px=[Math.round(deltaFactor*d.scrollRatio.y),parseInt(o.mouseWheel.scrollAmount)],
@@ -1492,7 +1492,7 @@ and dependencies (minified).
 						contentPos=Math.abs($("#mCSB_"+d.idx+"_container")[0].offsetTop),
 						draggerPos=mCSB_dragger[0][0].offsetTop,
 						limit=mCSB_dragger[0].parent().height()-mCSB_dragger[0].height(),
-						dlt=deltaY || delta;
+						dlt=deltaY;
 				}
 				if(dlt===0) {return;}
 				if((dir==="y" && !d.overflowed[0]) || (dir==="x" && !d.overflowed[1])){return;}
