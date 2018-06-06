@@ -823,7 +823,7 @@ and dependencies (minified).
 			var fixedSizeScrollbarThemes=["rounded","rounded-dark","rounded-dots","rounded-dots-dark"],
 				nonExpandedScrollbarThemes=["rounded-dots","rounded-dots-dark","3d","3d-dark","3d-thick","3d-thick-dark","inset","inset-dark","inset-2","inset-2-dark","inset-3","inset-3-dark"],
 				disabledScrollButtonsThemes=["minimal","minimal-dark"],
-				enabledAutoHideScrollbarThemes=["minimal","minimal-dark"],
+				enabledAutoHideScrollbarThemes=[],
 				scrollbarPositionOutsideThemes=["minimal","minimal-dark"];
 			obj.autoDraggerLength=$.inArray(obj.theme,fixedSizeScrollbarThemes) > -1 ? false : obj.autoDraggerLength;
 			obj.autoExpandScrollbar=$.inArray(obj.theme,nonExpandedScrollbarThemes) > -1 ? false : obj.autoExpandScrollbar;
